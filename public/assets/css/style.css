@@ -1,84 +1,154 @@
-/*hover */
-.block {
-	margin-bottom: -20px;
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 300px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 300px;
+  background-color: #777;
+  
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 300px;
+  
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+    background:#d43f3a;
+    border:none;
+  }
+.navbar-inverse .navbar-nav>li>a{
+	color:#fff;
 	
 }
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
 
-.block.first {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+/* add mor custom by vy */
+.main-top{
+	
+	margin-top: 80px;
 	
 }
-
-.block.last {
-	
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
+	background:#f2dede;
 }
-
-.block.odd {
-	
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+	background:#f2dede;
 }
-
-.block.even {
-	
-}
-
-.block h2.block-title {
-	font-size: 12px;
-	font-weight: bold;
-	text-transform: uppercase;
-	margin: 0;
-	padding: 20px 0;
-}
-h2.trigger {
-	background: #ececec;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec',
-		endColorstr='#dcdcdc');
-	background: -webkit-gradient(linear, left top, left bottom, from(#ececec),
-		to(gainsboro));
-	background: -moz-linear-gradient(top, #ececec, gainsboro);
-	font-size: 15px;
-	height: 36px;
-	line-height: 36px;
-	font-weight:bold;
-	padding: 0 15px;
-	border-bottom: 1px solid #FFF;
-	color: #737373;
-	display: block;
-	cursor: pointer;
-}
-
-h2.trigger a {
-	color: #737373;
-	display: block;
-}
-
-h2.trigger a:hover {
-	text-decoration: none;
-	color: #2d2d2d;
-}
-
-h2.active a {
-	color: #fff;
-}
-
-h2.trigger:hover {
-	color: #2d2d2d;
-	background: #d8d8d8;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d8d8',
-		endColorstr='#b4b4b4');
-	background: -webkit-gradient(linear, left top, left bottom, from(#d8d8d8),
-		to(#b4b4b4));
-	background: -moz-linear-gradient(top, #d8d8d8, #b4b4b4);
-}
-
-.toggle-container {
-	background: #f6f6f6;
-	border: 1px solid #e8e8e8;
-	padding: 10px 15px;
-	color: #333;
-	word-wrap: break-word;
-	margin-top:-9px;
-}
-.actived {
-	display:block;
-	min-height:100px;
-	z-index:100;
-}
+h2{color:#d43f3a;}
