@@ -38,7 +38,7 @@ margin-bottom:27px;
 background:#f2dede;
 color:#a94442;
 }
-
+a {color:#a94442;}
 </style>
 </head>
 <!-- NAVBAR
@@ -138,10 +138,10 @@ color:#a94442;
 			<div class="row">
 			<!-- start left menu -->
 				<div class="col-md-4">
-					<button type="button" class="btn btn-danger btn-lg btn-block">Block level button</button>
-					<button type="button" class="btn btn-danger btn-lg btn-block">Block level button</button>
-					<button type="button" class="btn btn-danger btn-lg btn-block">Block level button</button>
-					<button type="button" class="btn btn-danger btn-lg btn-block">Block level button</button>
+					<a href="ca-nhan"><button type="button" class="btn btn-danger btn-lg btn-block">Quản lý tài khoản</button></a>
+					<a href=""><button type="button" class="btn btn-danger btn-lg btn-block">Giới thiệu doanh nghiệp</button></a>
+					<a href=""><button type="button" class="btn btn-danger btn-lg btn-block">Liên hệ đại lý</button></a>
+					<a href=""><button type="button" class="btn btn-danger btn-lg btn-block">Góp ý xây dựng</button></a>
 				</div>
 				<!-- end left menu -->
 				
@@ -177,7 +177,7 @@ color:#a94442;
 								</div>
 								<div class="form-group">
 									<div class="col-sm-offset-3 col-sm-9">
-										<button type="submit" class="btn btn-danger">Sign in</button>
+										<a href=""><button type="submit" class="btn btn-danger">Sign in</button></a> | <a href="">Đăng ký tài khoản</a>
 									</div>
 								</div>
 							</form>
@@ -190,10 +190,10 @@ color:#a94442;
 				
 				<!-- start right menu -->
 				<div class="col-md-4">
-					<button type="button" class="btn btn-danger btn-lg btn-block right">Block level button</button>
-					<button type="button" class="btn btn-danger btn-lg btn-block right">Block level button</button>
-					<button type="button" class="btn btn-danger btn-lg btn-block right">Block level button</button>
-					<button type="button" class="btn btn-danger btn-lg btn-block right">Block level button</button>
+					<a href=""><button type="button" class="btn btn-danger btn-lg btn-block right">Tin tức</button></a>
+					<a href=""><button type="button" class="btn btn-danger btn-lg btn-block right">Hướng dẫn</button></a>
+					<a href=""><button type="button" class="btn btn-danger btn-lg btn-block right">Khuyến mãi</button></a>
+					<a href=""><button type="button" class="btn btn-danger btn-lg btn-block right">Tuyển dụng</button></a>
 				</div>
 				<!-- end right menu -->
 			</div>
