@@ -6,9 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname(dirname($vendorDir));
 
 return array(
-    'Psr\\Log\\' => array($vendorDir . '/psr/log'),
+    'Twig_' => array($vendorDir . '/twig/twig/lib'),
+    'Mustache' => array($vendorDir . '/mustache/mustache/src'),
+    'MtHaml\\' => array($vendorDir . '/mthaml/mthaml/lib'),
     'Monolog' => array($vendorDir . '/monolog/monolog/src'),
-    'Michelf' => array($vendorDir . '/michelf/php-markdown'),
-    'Fuel\\Upload' => array($vendorDir . '/fuelphp/upload/src'),
+    'Lex' => array($vendorDir . '/pyrocms/lex/lib'),
+    'Dwoo\\' => array($vendorDir . '/dwoo/dwoo/lib'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src'),
 );

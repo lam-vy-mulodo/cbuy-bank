@@ -13,9 +13,9 @@ body {
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-  position: absolute;
+ /* position: absolute;
   top: 0;
-  right: 0;
+  right: 0;*/
   left: 0;
   z-index: 20;
 }
@@ -152,3 +152,56 @@ body {
 	background:#f2dede;
 }
 h2{color:#d43f3a;}
+a {color:#a94442;}
+.nav-tabs{
+	background:#d43f3a;
+	padding:2px 0px 0px 50px;
+}
+.nav-tabs a{
+		color: #fff;
+	
+}
+.nav-tabs li a:hover {
+	color:#d43f3a;
+	background:#fff;
+	border-bottom:1px solid #fff;
+}
+.submenu{
+	margin:10px 0px;
+}
+.submenu>li{
+	height:40px;
+}
+.submenu>li>a{
+	padding:5px;
+	height:40px;
+	margin-right:10px;
+}
+.submenu li a:hover {	
+	color:black;	
+	background:none;
+	border-bottom:2px solid black;
+	padding-bottom:0px;
+	border-radius:4px;
+}
+/*table*/
+table td,th {
+	padding:5px;
+	font-size:13px;
+}
+.headerTable{
+	font-weight:bold;
+	
+	color:#d43f3a;
+	text-align:center;
+}
+.boder-out {
+	background-color:#d43f3a;
+	border-radius:4px;	
+	padding: 3px;
+}
+ .boder-in
+ {
+    padding: 10px;
+    background-color: #FFFFFF;
+}

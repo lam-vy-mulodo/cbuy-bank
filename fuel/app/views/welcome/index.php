@@ -38,7 +38,7 @@ margin-bottom:27px;
 background:#f2dede;
 color:#a94442;
 }
-a {color:#a94442;}
+
 </style>
 </head>
 <!-- NAVBAR
