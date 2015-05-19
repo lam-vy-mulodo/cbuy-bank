@@ -21,6 +21,15 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   
+    <script src="{$js_asset_url}/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="{$js_asset_url}/vendor/holder.js"></script>
+    <script src="{$js_asset_url}/ie10-viewport-bug-workaround.js"></script>
     <![endif]-->
 
     <!-- Custom styles for this template -->
@@ -82,24 +91,24 @@
 		<!-- nav tab menu -->
 		<div id="rootwizard" class="tabbable tabs-center">
 			<ul class="nav nav-tabs">
-			  	<li class=""><a href="#tab1" data-toggle="tab" aria-expanded="false">Trang chủ</a></li>
-				<li class="active"><a href="#tab2" data-toggle="tab" aria-expanded="false">Tài khoản</a></li>
-				<li class=""><a href="#tab3" data-toggle="tab" aria-expanded="true">Thanh toán</a></li>
-				<li class=""><a href="#tab3" data-toggle="tab" aria-expanded="true">Hỗ trợ</a></li>
-				<li class=""><a href="#tab3" data-toggle="tab" aria-expanded="true">Tin tức</a></li>
-				<li class=""><a href="#tab3" data-toggle="tab" aria-expanded="true">Hướng dẫn</a></li>
+			  	<li class=""><a href="{$base_url}">Trang chủ</a></li>
+				<li class="" id="1"><a href="ca-nhan">Tài khoản</a></li>
+				<li class="" id="2"><a href="thanh-toan">Thanh toán</a></li>
+				<li class="" id="3"><a href="ho-tro">Hỗ trợ</a></li>
+				<li class="" id="4"><a href="#tab3" data-toggle="tab" aria-expanded="true">Tin tức</a></li>
+				<li class="" id="5"><a href="#tab3" data-toggle="tab" aria-expanded="true">Hướng dẫn</a></li>
 			</ul>
-			<div class="tab-content">
+			<!--<div class="tab-content">
 			    <div class="tab-pane" id="tab1">
 			      
 			    </div>
 			    <div class="tab-pane active" id="tab2">
-			      	<!-- thanh toan tab-->
-			      	{include file="users/index.tpl"}
+			      	
+			      
 			    </div>
 			    <div class="tab-pane" id="tab3">
-					<!-- thanh toan tab-->
-			      	{include file="users/thanhtoan.tpl"}
+					
+			      	
 			    </div>
 				<div class="tab-pane" id="tab4">
 					4
@@ -108,7 +117,7 @@
 					5
 			    </div>
 				
-			</div>	
+			</div>	-->
 		</div>
 		<!-- end nav tab menu -->
       </div>
