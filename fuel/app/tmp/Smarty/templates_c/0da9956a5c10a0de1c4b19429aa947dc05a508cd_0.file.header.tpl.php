@@ -1,19 +1,19 @@
-<?php /* Smarty version 3.1.23, created on 2015-05-14 09:31:14
-         compiled from "C:/xampp/htdocs/cbuy.com/fuel/app/views/users/header.tpl" */ ?>
+<?php /* Smarty version 3.1.23, created on 2015-06-04 10:59:50
+         compiled from "C:/xampp/htdocs/cbuybank/fuel/app/views/users/header.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:70055544f42f25319_34958389%%*/
+/*%%SmartyHeaderCode:1077355701386543e98_32553399%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '1fe324206cd97a9feb48f82bd55a8838f5a31c78' => 
+    '0da9956a5c10a0de1c4b19429aa947dc05a508cd' => 
     array (
-      0 => 'C:/xampp/htdocs/cbuy.com/fuel/app/views/users/header.tpl',
-      1 => 1431588673,
+      0 => 'C:/xampp/htdocs/cbuybank/fuel/app/views/users/header.tpl',
+      1 => 1432003014,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '70055544f42f25319_34958389',
+  'nocache_hash' => '1077355701386543e98_32553399',
   'variables' => 
   array (
     'css_asset_url' => 0,
@@ -22,14 +22,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.23',
-  'unifunc' => 'content_55544f430f9216_27503007',
+  'unifunc' => 'content_55701386664320_82553154',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55544f430f9216_27503007')) {
-function content_55544f430f9216_27503007 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_55701386664320_82553154')) {
+function content_55701386664320_82553154 ($_smarty_tpl) {
 ?>
 <?php
-$_smarty_tpl->properties['nocache_hash'] = '70055544f42f25319_34958389';
+$_smarty_tpl->properties['nocache_hash'] = '1077355701386543e98_32553399';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -148,22 +148,22 @@ $_smarty_tpl->properties['nocache_hash'] = '70055544f42f25319_34958389';
 			<ul class="nav nav-tabs">
 			  	<li class=""><a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 ">Trang chủ</a></li>
-				<li class="" id="1"><a href="#tab2" data-toggle="tab" aria-expanded="false">Tài khoản</a></li>
-				<li class="" id="2"><a href="#tab3" data-toggle="tab" aria-expanded="true">Thanh toán</a></li>
-				<li class="" id="3"><a href="#tab3" data-toggle="tab" aria-expanded="true">Hỗ trợ</a></li>
+				<li class="" id="1"><a href="ca-nhan">Tài khoản</a></li>
+				<li class="" id="2"><a href="thanh-toan">Thanh toán</a></li>
+				<li class="" id="3"><a href="ho-tro">Hỗ trợ</a></li>
 				<li class="" id="4"><a href="#tab3" data-toggle="tab" aria-expanded="true">Tin tức</a></li>
 				<li class="" id="5"><a href="#tab3" data-toggle="tab" aria-expanded="true">Hướng dẫn</a></li>
 			</ul>
-			<div class="tab-content">
+			<!--<div class="tab-content">
 			    <div class="tab-pane" id="tab1">
 			      
 			    </div>
 			    <div class="tab-pane active" id="tab2">
-			      	<!-- thanh toan tab-->
+			      	
 			      
 			    </div>
 			    <div class="tab-pane" id="tab3">
-					<!-- thanh toan tab-->
+					
 			      	
 			    </div>
 				<div class="tab-pane" id="tab4">
@@ -173,7 +173,7 @@ $_smarty_tpl->properties['nocache_hash'] = '70055544f42f25319_34958389';
 					5
 			    </div>
 				
-			</div>	
+			</div>	-->
 		</div>
 		<!-- end nav tab menu -->
       </div>
