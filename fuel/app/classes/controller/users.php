@@ -109,4 +109,9 @@ use Dwoo\Template\String;
 		$this->template->content = View_Smarty::forge('users/changepassword.tpl');
 		return mb_convert_encoding($this->template,'utf-8', 'utf-8');
 	}
+	public function action_login(){
+		$phone = Input::post('phone');
+		$pass = Input::post('password');
+		return 1;
+	}
  }
