@@ -20,6 +20,7 @@ Autoloader::register();
  * Fuel::PRODUCTION
  */
 Fuel::$env = (isset($_SERVER['FUEL_ENV']) ? $_SERVER['FUEL_ENV'] : Fuel::DEVELOPMENT);
-
+//require config
+require APPPATH.'config/base_config.php';
 // Initialize the framework with the config file.
 Fuel::init('config.php');

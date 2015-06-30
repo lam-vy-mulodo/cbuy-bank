@@ -23,7 +23,19 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <?php echo Asset::js('bootstrap.min.js')?>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <?php echo Asset::js('vendor/holder.js')?>
+    <?php echo Asset::js('ie10-viewport-bug-workaround.js')?>
+<!-- the js file for main -->
+    <?php echo Asset::js('ajax.js');?>
+	<?php echo Asset::js('main.js');?>
 <!-- Custom styles for this template -->
     
     <?php echo Asset::css('style.css');?>
@@ -38,7 +50,7 @@ margin-bottom:27px;
 background:#f2dede;
 color:#a94442;
 }
-a {color:#a94442;}
+
 </style>
 </head>
 <!-- NAVBAR
@@ -152,19 +164,20 @@ a {color:#a94442;}
 							<b>Đăng nhập</b>
 						</div>
 						<div class="panel-body">
-							<form class="form-horizontal">
+							<p id="rs-login"></p>
+							<form class="form-horizontal" name="login" action="users/login" >
 								<div class="form-group">
-									<label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+									<label for="inputPhone3" class="col-sm-3 control-label">Phone</label>
 									<div class="col-sm-9">
-										<input type="email" class="form-control" id="inputEmail3"
-											placeholder="Email">
+										<input type="text" class="form-control" id="inputPhone3"
+											placeholder="Phone" name="phone">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="inputPassword3" class="col-sm-3 control-label">Password</label>
 									<div class="col-sm-9">
 										<input type="password" class="form-control"
-											id="inputPassword3" placeholder="Password">
+											id="inputPassword3" placeholder="Password" name="password">
 									</div>
 								</div>
 								<div class="form-group">
@@ -177,7 +190,7 @@ a {color:#a94442;}
 								</div>
 								<div class="form-group">
 									<div class="col-sm-offset-3 col-sm-9">
-										<a href=""><button type="submit" class="btn btn-danger">Sign in</button></a> | <a href="">Đăng ký tài khoản</a>
+										<button type="button" class="btn btn-danger btn-login">Sign in</button> | <a href="">Đăng ký tài khoản</a>
 									</div>
 								</div>
 							</form>
@@ -214,16 +227,7 @@ a {color:#a94442;}
 	<!-- /.container -->
 
 
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <?php echo Asset::js('bootstrap.min.js')?>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <?php echo Asset::js('vendor/holder.js')?>
-    <?php echo Asset::js('ie10-viewport-bug-workaround.js')?>
+	
     
   </body>
 </html>

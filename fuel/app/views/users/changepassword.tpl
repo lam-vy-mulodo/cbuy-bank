@@ -1,0 +1,1 @@
+{include file="users/menu_canhan.tpl"}
